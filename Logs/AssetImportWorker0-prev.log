@@ -122,3 +122,60 @@ Received Import Request.
 Start importing Assets/Scripts using Guid(4279070236bcd124ca553425d6bc712c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a276cb4f75685a192b64e45b3f0d324') in 0.005862 seconds
   Import took 0.008608 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 452.426700 seconds.
+  path: Assets/Scripts/UzayGemimizinKontrolu.cs
+  artifactKey: Guid(417589aa3192b2c47894225e9430053d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/UzayGemimizinKontrolu.cs using Guid(417589aa3192b2c47894225e9430053d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07b4f036a2866f38a416591594368b6') in 0.011777 seconds
+  Import took 0.014858 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000652 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.9 MB.
+System memory in use after: 87.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2261.
+Total: 5.307300 ms (FindLiveObjects: 0.414800 ms CreateObjectMapping: 0.198800 ms MarkObjects: 4.414500 ms  DeleteObjects: 0.276600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.212066 seconds.
+  path: Assets/Gemi.png
+  artifactKey: Guid(da71bb51c54ccef4fa6bea175e3156d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gemi.png using Guid(da71bb51c54ccef4fa6bea175e3156d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c835e7955de1666cecac5639c4e5ddaf') in 0.047507 seconds
+  Import took 0.050140 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000657 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.696 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1804 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 88.0 MB.
+System memory in use after: 87.9 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2266.
+Total: 1.909400 ms (FindLiveObjects: 0.224900 ms CreateObjectMapping: 0.054700 ms MarkObjects: 1.547700 ms  DeleteObjects: 0.080100 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
