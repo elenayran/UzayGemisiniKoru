@@ -9,8 +9,12 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject enemy= Instantiate(dusmanPrefabi, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-        enemy.transform.parent = transform;
+        foreach (Transform cocuk in transform)
+        {
+            GameObject enemy = Instantiate(dusmanPrefabi,cocuk.transform.position, Quaternion.identity) as GameObject;
+            enemy.transform.parent = cocuk;
+        }
+       
     }
 
     // Update is called once per frame
