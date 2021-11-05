@@ -5,7 +5,8 @@ using UnityEngine;
 public class DusmanlarinÇiktigiYer : MonoBehaviour
 {
     public GameObject dusmanPrefabi;
-
+    public float genislik;
+    public float yukseklik;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,10 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
        
     }
 
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position, new Vector3(genislik, yukseklik));
+    }
     // Update is called once per frame
     void Update()
     {
