@@ -402,6 +402,8 @@ MonoBehaviour:
   dusmanPrefabi: {fileID: 1594338590621405305, guid: 21ac45ed6a8e36447b07beb360fa8608, type: 3}
   genislik: 11
   yukseklik: 5
+  speed: 4
+  sagaHareket: 1
 --- !u!4 &644757058
 Transform:
   m_ObjectHideFlags: 0
