@@ -47,11 +47,14 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
         float sagSinir = transform.position.x + genislik / 2;
         float solSinir = transform.position.x - genislik / 2;
 
-        if (sagSinir > xmax || solSinir < xmin )
+        if (sagSinir > xmax   )
         {
 
-            sagaHareket = !sagaHareket;
+            sagaHareket = false;
         }
-        
+        else if (solSinir < xmin)
+        {
+            sagaHareket = true;
+        }
     }
 }
