@@ -352,3 +352,4 @@ Received Import Request.
 Start importing Assets/Prefabs/Gemi.prefab using Guid(4760961da644e9c4d9a48c072b693edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '078cf951651099e8580a83fcbc06c11d') in 0.050153 seconds 
   Import took 0.054367 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
