@@ -51,6 +51,7 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
         {
 
             sagaHareket = false;
+
         }
         else if (solSinir < xmin)
         {

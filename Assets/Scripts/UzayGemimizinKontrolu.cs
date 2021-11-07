@@ -8,6 +8,7 @@ public class UzayGemimizinKontrolu : MonoBehaviour
     public float inceAyar = 0.7f;
      float xmin;
      float xmax;
+    public GameObject Mermi;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,12 @@ public class UzayGemimizinKontrolu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKey(KeyCode.Space))
+        {
+
+            Instantiate(Mermi, transform.position, Quaternion.identity);
+        }
         float yeniX = Mathf.Clamp(transform.position.x, xmin, xmax);
         transform.position = new Vector3(yeniX, transform.position.y, transform.position.z);
 
