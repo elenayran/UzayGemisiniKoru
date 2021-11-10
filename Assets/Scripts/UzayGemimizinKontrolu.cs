@@ -9,12 +9,14 @@ public class UzayGemimizinKontrolu : MonoBehaviour
      float xmin;
      float xmax;
     public GameObject Mermi;
+    public float mermininHizi = 1f;
+    public float atesEtmeAraligi = 2f;
     // Start is called before the first frame update
     void Start()
     {
-        float uzaklýk = transform.position.z - Camera.main.transform.position.z;
-        Vector3 solUc = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, uzaklýk));
-        Vector3 sagUc = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, uzaklýk));
+        float uzaklik = transform.position.z - Camera.main.transform.position.z;
+        Vector3 solUc = Camera.main.ViewportToWorldPoint(new Vector3(0, 0, uzaklik));
+        Vector3 sagUc = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, uzaklik));
         xmin = solUc.x + inceAyar;
         xmax = sagUc.x - inceAyar;
         
@@ -24,10 +26,14 @@ public class UzayGemimizinKontrolu : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)) // space tuþuna 1 kere basýp devreye girer yani bir kere çalýþýr
         {
 
-            Instantiate(Mermi, transform.position, Quaternion.identity);
+            InvokeRepeating("AtesEtme", 0.001f, atesEtmeAraligi); // istenilen fonktiyon ne kadar süre sonra gerçekleþsin ve hangi aralik,siklikla gerçekleþecek
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            CancelInvoke("AtesEtme");
         }
         float yeniX = Mathf.Clamp(transform.position.x, xmin, xmax);
         transform.position = new Vector3(yeniX, transform.position.y, transform.position.z);
@@ -44,5 +50,12 @@ public class UzayGemimizinKontrolu : MonoBehaviour
           //  transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
             transform.position += Vector3.right * speed * Time.deltaTime;
         }
+    }
+
+    void AtesEtme()
+    {
+        GameObject GemimizinMermisi = Instantiate(Mermi, transform.position, Quaternion.identity) as GameObject; //  as gamebject= gemimizin memisi gameobjest gibi davranmasýný saðlýyoruz
+
+        GemimizinMermisi.GetComponent<Rigidbody2D>().velocity = new Vector3(0, mermininHizi, 0);
     }
 }
