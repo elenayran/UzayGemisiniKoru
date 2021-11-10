@@ -11,6 +11,7 @@ public class UzayGemimizinKontrolu : MonoBehaviour
     public GameObject Mermi;
     public float mermininHizi = 1f;
     public float atesEtmeAraligi = 2f;
+    public float can = 400f;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,8 +55,25 @@ public class UzayGemimizinKontrolu : MonoBehaviour
 
     void AtesEtme()
     {
-        GameObject GemimizinMermisi = Instantiate(Mermi, transform.position, Quaternion.identity) as GameObject; //  as gamebject= gemimizin memisi gameobjest gibi davranmasýný saðlýyoruz
+        GameObject GemimizinMermisi = Instantiate(Mermi, transform.position + new Vector3(0,1f,0), Quaternion.identity) as GameObject; //  as gamebject= gemimizin memisi gameobjest gibi davranmasýný saðlýyoruz
 
         GemimizinMermisi.GetComponent<Rigidbody2D>().velocity = new Vector3(0, mermininHizi, 0);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        MermiKontrolu carpanMermi = collision.gameObject.GetComponent<MermiKontrolu>();
+
+        if (carpanMermi)
+        {
+            carpanMermi.carptigindaYokOL();
+            can -= carpanMermi.ZararVerme();
+
+            if (can <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

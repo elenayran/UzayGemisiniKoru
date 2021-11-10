@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 181900877506577543}
   - component: {fileID: 181900877506577528}
   - component: {fileID: 181900877506577542}
+  - component: {fileID: -3007922265752785042}
+  - component: {fileID: -7149585408126369067}
   m_Layer: 0
   m_Name: Gemi
   m_TagString: Untagged
@@ -97,4 +99,90 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   inceAyar: 0.7
-  Mermi: {fileID: 0}
+  Mermi: {fileID: 7528843010479911140, guid: 892d7e767d954c74cb6ff488eec7d806, type: 3}
+  mermininHizi: 8
+  atesEtmeAraligi: 2
+--- !u!60 &-3007922265752785042
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181900877506577529}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.14, y: 0.82}
+    newSize: {x: 1.14, y: 0.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.31424516, y: -0.35166752}
+      - {x: 0.33197048, y: -0.41901755}
+      - {x: 0.41055584, y: -0.41}
+      - {x: 0.43065023, y: -0.25610912}
+      - {x: 0.49234048, y: -0.1854686}
+      - {x: 0.57848346, y: 0.052849457}
+      - {x: 0.5405197, y: 0.18272766}
+      - {x: 0.37625515, y: 0.10958293}
+      - {x: 0.3806486, y: 0.08532654}
+      - {x: 0.29804796, y: 0.2593653}
+      - {x: 0.3008737, y: 0.3454369}
+      - {x: 0.27635917, y: 0.3954369}
+      - {x: 0.11905368, y: 0.40271854}
+      - {x: 0.11716905, y: 0.2911375}
+      - {x: -0.10595045, y: 0.28514305}
+      - {x: -0.1279436, y: 0.40446028}
+      - {x: -0.27335334, y: 0.3996803}
+      - {x: -0.3070372, y: 0.3484269}
+      - {x: -0.2981091, y: 0.2432788}
+      - {x: -0.3692909, y: 0.110490814}
+      - {x: -0.5304727, y: 0.17823724}
+      - {x: -0.54231864, y: 0.15862153}
+      - {x: -0.5597636, y: 0.14317578}
+      - {x: -0.5797221, y: 0.03160735}
+      - {x: -0.56675947, y: 0.005091794}
+      - {x: -0.55027795, y: -0.018704705}
+      - {x: -0.43055582, y: -0.27065036}
+      - {x: -0.41330197, y: -0.39438856}
+      - {x: -0.32043496, y: -0.40059453}
+      - {x: -0.32229, y: -0.35141537}
+      - {x: -0.2005559, y: -0.36463043}
+      - {x: -0.19944417, y: -0.36111188}
+      - {x: -0.18582034, y: -0.26310357}
+      - {x: -0.15324067, y: -0.26092812}
+      - {x: -0.0026848335, y: -0.3873152}
+      - {x: 0.14747182, y: -0.25153518}
+      - {x: 0.19185106, y: -0.25574195}
+      - {x: 0.197871, y: -0.35814896}
+--- !u!50 &-7149585408126369067
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181900877506577529}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
