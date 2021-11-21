@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -7196622068072027335}
   - component: {fileID: -3069110608834506125}
   - component: {fileID: -4972710670469159141}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DusmaninMermisi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59f7d1f7ec0ff74ca8a8a9115caa8b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  verdigiZarar: 10

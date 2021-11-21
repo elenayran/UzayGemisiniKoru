@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -1032012399960654426}
   - component: {fileID: 1247620609430105940}
   - component: {fileID: 1774279969778060034}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dusman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,4 +169,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mermi: {fileID: 7528843010479911140, guid: 2e0a0afd9672683499bcc8830c277404, type: 3}
+  mermiHizi: 8
   can: 100

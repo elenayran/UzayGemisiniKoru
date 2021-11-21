@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 181900877506577542}
   - component: {fileID: -3007922265752785042}
   - component: {fileID: -7149585408126369067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Gemi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,6 +102,7 @@ MonoBehaviour:
   Mermi: {fileID: 7528843010479911140, guid: 892d7e767d954c74cb6ff488eec7d806, type: 3}
   mermininHizi: 8
   atesEtmeAraligi: 2
+  can: 400
 --- !u!60 &-3007922265752785042
 PolygonCollider2D:
   m_ObjectHideFlags: 0
