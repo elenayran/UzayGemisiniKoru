@@ -20,12 +20,16 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
         Vector3 kameraninSagTarafi = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, ObjeIleKameraZsininFarki));
         xmin = kameraninSolTarafi.x;
         xmax = kameraninSagTarafi.x;
+        DusmanlarinYaratilmasi();
+       
+    }
+    void DusmanlarinYaratilmasi()
+    {
         foreach (Transform cocuk in transform)
         {
-            GameObject enemy = Instantiate(dusmanPrefabi,cocuk.transform.position, Quaternion.identity) as GameObject;
+            GameObject enemy = Instantiate(dusmanPrefabi, cocuk.transform.position, Quaternion.identity) as GameObject;
             enemy.transform.parent = cocuk;
         }
-       
     }
 
     public void OnDrawGizmos()
@@ -57,5 +61,23 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
         {
             sagaHareket = true;
         }
+
+        if (ButunDusmanlarOlduMu())
+        {
+            DusmanlarinYaratilmasi();
+        }
+    }
+
+    bool ButunDusmanlarOlduMu()
+    {
+        foreach (Transform CocuklarinPozisyonu in transform)
+        {
+            if (CocuklarinPozisyonu.childCount > 0)
+            {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
