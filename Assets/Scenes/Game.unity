@@ -377,6 +377,7 @@ MonoBehaviour:
   yukseklik: 5
   speed: 4
   sagaHareket: 1
+  yaratmayiGeciktirmeSuresi: 1
 --- !u!4 &644757058
 Transform:
   m_ObjectHideFlags: 0
@@ -725,6 +726,10 @@ PrefabInstance:
     - target: {fileID: 181900877506577529, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
       propertyPath: m_Name
       value: Gemi
+      objectReference: {fileID: 0}
+    - target: {fileID: 181900877506577542, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
+      propertyPath: mermininHizi
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 181900877506577543, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
       propertyPath: m_RootOrder
