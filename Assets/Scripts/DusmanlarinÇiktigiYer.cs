@@ -12,6 +12,7 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
     public bool sagaHareket = true;
     private float xmax;
     private float xmin;
+    public float yaratmayiGeciktirmeSuresi = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
         Vector3 kameraninSagTarafi = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, ObjeIleKameraZsininFarki));
         xmin = kameraninSolTarafi.x;
         xmax = kameraninSagTarafi.x;
-        DusmanlarinYaratilmasi();
+        DusmanlarinTekTekYaratilmesi();
        
     }
     void DusmanlarinYaratilmasi()
@@ -31,7 +32,20 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
             enemy.transform.parent = cocuk;
         }
     }
+     void DusmanlarinTekTekYaratilmesi()
+    {
+        Transform uygunPozisyon = SonrakiUygunPozisyon();
+        if (uygunPozisyon)
+        {
+            GameObject enemy = Instantiate(dusmanPrefabi, uygunPozisyon.transform.position, Quaternion.identity) as GameObject;
+            enemy.transform.parent = uygunPozisyon;
+        }
 
+        if (SonrakiUygunPozisyon())
+        {
+            Invoke("DusmanlarinTekTekYaratilmesi", yaratmayiGeciktirmeSuresi); // düşman oyuncularin tek tek oluşturulmasını geçiktirileerek sağlar
+        }
+    }
     public void OnDrawGizmos()
     {
         Gizmos.DrawWireCube(transform.position, new Vector3(genislik, yukseklik));
@@ -64,10 +78,21 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
 
         if (ButunDusmanlarOlduMu())
         {
-            DusmanlarinYaratilmasi();
+            DusmanlarinTekTekYaratilmesi();
         }
     }
+     Transform SonrakiUygunPozisyon() // düşmanların pozisyonlarını tutmuş olduk ve üstteki dusmanlarıntektekyaratılması metodu ile gerçekleştirdik
+    {
+        foreach (Transform CocuklarinPozisyonu in transform)
+        {
+            if (CocuklarinPozisyonu.childCount == 0)
+            {
+                return CocuklarinPozisyonu;
+            }
+        }
 
+        return null;
+    }
     bool ButunDusmanlarOlduMu()
     {
         foreach (Transform CocuklarinPozisyonu in transform)
