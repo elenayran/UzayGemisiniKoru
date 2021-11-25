@@ -12,7 +12,7 @@ public class DusmanlarinÇiktigiYer : MonoBehaviour
     public bool sagaHareket = true;
     private float xmax;
     private float xmin;
-    public float yaratmayiGeciktirmeSuresi = 1f;
+    public float yaratmayiGeciktirmeSuresi = 0.7f;
     // Start is called before the first frame update
     void Start()
     {

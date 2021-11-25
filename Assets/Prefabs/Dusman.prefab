@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -1032012399960654426}
   - component: {fileID: 1247620609430105940}
   - component: {fileID: 1774279969778060034}
+  - component: {fileID: 1746105441}
   m_Layer: 7
   m_Name: Dusman
   m_TagString: Untagged
@@ -171,3 +172,22 @@ MonoBehaviour:
   mermi: {fileID: 7528843010479911140, guid: 2e0a0afd9672683499bcc8830c277404, type: 3}
   mermiHizi: 8
   can: 100
+--- !u!95 &1746105441
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594338590621405305}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fcf99bca428a88f4292949d290d14aec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
