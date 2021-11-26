@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Gemi Mermileri
+    uniqueID: 3541590401
+    locked: 0
+  - name: Dusman Mermileri
+    uniqueID: 1313793675
+    locked: 0
+  - name: Dusman
+    uniqueID: 1776589789
+    locked: 0
+  - name: Gemi
+    uniqueID: 290138261
+    locked: 0
