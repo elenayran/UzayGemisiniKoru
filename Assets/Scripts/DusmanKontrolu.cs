@@ -10,6 +10,9 @@ public class DusmanKontrolu : MonoBehaviour
     public int skorDegeri = 200;
     private SkorKontrolu skorKontrolu;
 
+    public AudioClip atesSesi;
+    public AudioClip olumSesi;
+
     private void Start()
     {
         skorKontrolu = GameObject.Find("Skor").GetComponent<SkorKontrolu>();
@@ -28,6 +31,7 @@ public class DusmanKontrolu : MonoBehaviour
             if (can <= 0)
             {
                 Destroy(gameObject);
+                AudioSource.PlayClipAtPoint(olumSesi, transform.position);
                 skorKontrolu.SkorArtttirma(skorDegeri);
             }
         }
@@ -51,5 +55,7 @@ public class DusmanKontrolu : MonoBehaviour
         Vector3 baslangicPozisyonu = transform.position + new Vector3(0, -0.8f, 0);
         GameObject DusmaninMermisi = Instantiate(mermi, baslangicPozisyonu, Quaternion.identity) as GameObject;
         DusmaninMermisi.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -mermiHizi);
+
+        AudioSource.PlayClipAtPoint(atesSesi, transform.position);
     }
 }

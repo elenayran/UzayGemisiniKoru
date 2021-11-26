@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 181900877506577529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.2, y: -3.5, z: 0}
-  m_LocalScale: {x: 1.2375813, y: 1.2375813, z: 1.2375813}
+  m_LocalScale: {x: 1.0794184, y: 1.127684, z: 1.2375813}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -100,9 +100,11 @@ MonoBehaviour:
   speed: 10
   inceAyar: 0.7
   Mermi: {fileID: 7528843010479911140, guid: 892d7e767d954c74cb6ff488eec7d806, type: 3}
-  mermininHizi: 8
+  mermininHizi: 10
   atesEtmeAraligi: 2
   can: 400
+  AtesSesi: {fileID: 8300000, guid: c79f2f4248b41364cb678787b6154f83, type: 3}
+  OlumSesi: {fileID: 8300000, guid: 647839f39f7c2964ea6d87c392adce4b, type: 3}
 --- !u!60 &-3007922265752785042
 PolygonCollider2D:
   m_ObjectHideFlags: 0

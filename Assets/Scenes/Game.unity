@@ -5239,7 +5239,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 11111111111
+  m_Text: 0
 --- !u!222 &475294270
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10594,21 +10594,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gemi
       objectReference: {fileID: 0}
-    - target: {fileID: 181900877506577542, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
-      propertyPath: mermininHizi
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 181900877506577543, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 181900877506577543, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0794184
-      objectReference: {fileID: 0}
-    - target: {fileID: 181900877506577543, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.127684
       objectReference: {fileID: 0}
     - target: {fileID: 181900877506577543, guid: 4760961da644e9c4d9a48c072b693edd, type: 3}
       propertyPath: m_LocalPosition.x

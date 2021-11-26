@@ -172,6 +172,9 @@ MonoBehaviour:
   mermi: {fileID: 7528843010479911140, guid: 2e0a0afd9672683499bcc8830c277404, type: 3}
   mermiHizi: 8
   can: 100
+  skorDegeri: 200
+  atesSesi: {fileID: 8300000, guid: 24d2d9d7739515744a4cf86c377e38bc, type: 3}
+  olumSesi: {fileID: 8300000, guid: aa3d2efc65fceb849a090286c46d911e, type: 3}
 --- !u!95 &1746105441
 Animator:
   serializedVersion: 3
