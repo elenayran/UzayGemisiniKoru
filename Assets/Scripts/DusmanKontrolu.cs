@@ -7,8 +7,15 @@ public class DusmanKontrolu : MonoBehaviour
     public GameObject mermi;
     public float mermiHizi = 8f;
     public float can = 100f;
+    public int skorDegeri = 200;
+    private SkorKontrolu skorKontrolu;
 
-   // public float saniyeBasinaMermiAtma = 100000f;
+    private void Start()
+    {
+        skorKontrolu = GameObject.Find("Skor").GetComponent<SkorKontrolu>();
+
+    }
+    // public float saniyeBasinaMermiAtma = 100000f;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         MermiKontrolu carpanMermi = collision.gameObject.GetComponent<MermiKontrolu>();
@@ -21,14 +28,12 @@ public class DusmanKontrolu : MonoBehaviour
             if (can <= 0)
             {
                 Destroy(gameObject);
+                skorKontrolu.SkorArtttirma(skorDegeri);
             }
         }
     }
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
