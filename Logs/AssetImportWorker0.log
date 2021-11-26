@@ -488,3 +488,44 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 806.910311 seconds.
+  path: Assets/Prefabs/DusmaninMermisi.prefab
+  artifactKey: Guid(2e0a0afd9672683499bcc8830c277404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/DusmaninMermisi.prefab using Guid(2e0a0afd9672683499bcc8830c277404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0135975522d9b8180772b31f3a2415e') in 0.052741 seconds 
+  Import took 0.056208 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.739049 seconds.
+  path: Assets/Prefabs/GemininMermisi 1.prefab
+  artifactKey: Guid(892d7e767d954c74cb6ff488eec7d806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GemininMermisi 1.prefab using Guid(892d7e767d954c74cb6ff488eec7d806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c621444dd8916eca2bf4b49cb0f70b') in 0.012785 seconds 
+  Import took 0.017216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.584556 seconds.
+  path: Assets/Prefabs/Gemi.prefab
+  artifactKey: Guid(4760961da644e9c4d9a48c072b693edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gemi.prefab using Guid(4760961da644e9c4d9a48c072b693edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb108dfd22452eb739dec78276afb5e7') in 0.010492 seconds 
+  Import took 0.014079 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.380431 seconds.
+  path: Assets/Prefabs/Dusman.prefab
+  artifactKey: Guid(21ac45ed6a8e36447b07beb360fa8608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Dusman.prefab using Guid(21ac45ed6a8e36447b07beb360fa8608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4238b30d7828688f780d04d157c91f3') in 0.016239 seconds 
+  Import took 0.019520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.124468 seconds.
+  path: Assets/Prefabs/Gemi.prefab
+  artifactKey: Guid(4760961da644e9c4d9a48c072b693edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Gemi.prefab using Guid(4760961da644e9c4d9a48c072b693edd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47985a04a5d97c860b33d533eea4b870') in 0.010737 seconds 
+  Import took 0.014867 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
